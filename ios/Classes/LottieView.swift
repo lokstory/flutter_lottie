@@ -6,9 +6,9 @@ public class LottieView : NSObject, FlutterPlatformView {
    let frame : CGRect
    let viewId : Int64
    
-   var animationView: LOTAnimationView?
+   var animationView: AnimationView?
    var testStream : TestStreamHandler?
-   var delegates : [LOTValueDelegate]
+   var delegates : [ValueDelegate]
    var registrarInstance : FlutterPluginRegistrar
    
    
@@ -39,14 +39,14 @@ public class LottieView : NSObject, FlutterPlatformView {
          let filePath = argsDict["filePath"] as? String ?? nil;
          
          if url != nil {
-            self.animationView = LOTAnimationView(contentsOf: URL(string: url!)!)
+            self.animationView = AnimationView(contentsOf: URL(string: url!)!)
          }
          
          if filePath != nil {
             print("THIS IS THE ID " + String(viewId) + " " + filePath!)
             let key = self.registrarInstance.lookupKey(forAsset: filePath!)
             let path = Bundle.main.path(forResource: key, ofType: nil)
-            self.animationView = LOTAnimationView(filePath: path!)
+            self.animationView = AnimationView(filePath: path!)
          }
          
          let loop = argsDict["loop"] as? Bool ?? false
@@ -183,17 +183,17 @@ public class LottieView : NSObject, FlutterPlatformView {
    
    func setValue(type: String, value: String, keyPath: String) -> Void {
       switch type {
-      case "LOTColorValue":
+      case "ColorValue":
          let i = UInt32(value.dropFirst(2), radix: 16)
          let color = hexToColor(hex8: i!);
          self.delegates.append(ColorDelegate(color: color))
-         self.animationView?.setValueDelegate(self.delegates[self.delegates.count - 1], for: LOTKeypath(string: keyPath + ".Color"))
+         self.animationView?.setValueDelegate(self.delegates[self.delegates.count - 1], for: Keypath(string: keyPath + ".Color"))
          break;
-      case "LOTOpacityValue":
+      case "OpacityValue":
          if let n = NumberFormatter().number(from: value) {
             let f = CGFloat(truncating: n)
             self.delegates.append(NumberDelegate(number: f))
-            self.animationView?.setValueDelegate(self.delegates[self.delegates.count - 1], for: LOTKeypath(string: keyPath + ".Opacity"))
+            self.animationView?.setValueDelegate(self.delegates[self.delegates.count - 1], for: Keypath(string: keyPath + ".Opacity"))
          }
          break;
       default:
