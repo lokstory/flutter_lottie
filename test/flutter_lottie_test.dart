@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_lottie/flutter_lottie.dart';
+import 'package:mark922_flutter_lottie/mark922_flutter_lottie.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('flutter_lottie');
