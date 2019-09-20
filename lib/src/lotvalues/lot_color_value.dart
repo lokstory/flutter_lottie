@@ -4,11 +4,11 @@ import 'lot_value.dart';
 class LOTColorValue extends LOTValue {
   Color _value;
 
-  LOTColorValue.fromHEX({ @required String hex }) {
+  LOTColorValue.fromHEX({@required String hex}) {
     _value = HexColor(hex);
   }
 
-  LOTColorValue.fromColor({ @required Color color }) {
+  LOTColorValue.fromColor({@required Color color}) {
     _value = color;
   }
 
@@ -19,7 +19,6 @@ class LOTColorValue extends LOTValue {
   String get type {
     return 'LOTColorValue';
   }
-
 }
 
 class HexColor extends Color {
@@ -30,5 +29,6 @@ class HexColor extends Color {
     }
     return int.parse(hexColor, radix: 16);
   }
+
   HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
 }

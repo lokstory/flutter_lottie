@@ -12,31 +12,36 @@ class LottieController {
     this.id = id;
     print('Creating Method Channel convictiontech/flutter_lottie_$id');
     this._channel = new MethodChannel('convictiontech/flutter_lottie_$id');
-    this._playFinished = EventChannel('convictiontech/flutter_lottie_stream_playfinish_$id');
+    this._playFinished =
+        EventChannel('convictiontech/flutter_lottie_stream_playfinish_$id');
   }
 
   Future<void> setLoopAnimation(bool loop) async {
     assert(loop != null);
-    return _channel.invokeMethod('setLoopAnimation', { "loop": loop });
+    return _channel.invokeMethod('setLoopAnimation', {"loop": loop});
   }
 
   Future<void> setAutoReverseAnimation(bool reverse) async {
     assert(reverse != null);
-    return _channel.invokeMethod('setAutoReverseAnimation', { "reverse": reverse });
+    return _channel
+        .invokeMethod('setAutoReverseAnimation', {"reverse": reverse});
   }
 
   Future<void> play() async {
     return _channel.invokeMethod('play');
   }
 
-  Future<void> playWithProgress({double fromProgress, double toProgress}) async {
+  Future<void> playWithProgress(
+      {double fromProgress, double toProgress}) async {
     assert(toProgress != null);
-    return _channel.invokeMethod('playWithProgress', { "fromProgress": fromProgress,  "toProgress": toProgress });
+    return _channel.invokeMethod('playWithProgress',
+        {"fromProgress": fromProgress, "toProgress": toProgress});
   }
 
   Future<void> playWithFrames({int fromFrame, int toFrame}) async {
     assert(toFrame != null);
-    return _channel.invokeMethod('playWithFrames', { "fromFrame": fromFrame,  "toFrame": toFrame });
+    return _channel.invokeMethod(
+        'playWithFrames', {"fromFrame": fromFrame, "toFrame": toFrame});
   }
 
   Future<void> stop() async {
@@ -52,15 +57,17 @@ class LottieController {
   }
 
   Future<void> setAnimationSpeed(double speed) async {
-    return _channel.invokeMethod('setAnimationSpeed', { "speed": speed.clamp(0, 1) });
+    return _channel
+        .invokeMethod('setAnimationSpeed', {"speed": speed.clamp(0, 1)});
   }
 
   Future<void> setAnimationProgress(double progress) async {
-    return _channel.invokeMethod('setAnimationProgress', { "progress": progress.clamp(0, 1) });
+    return _channel.invokeMethod(
+        'setAnimationProgress', {"progress": progress.clamp(0, 1)});
   }
 
   Future<void> setProgressWithFrame(int frame) async {
-    return _channel.invokeMethod('setProgressWithFrame', { "frame": frame });
+    return _channel.invokeMethod('setProgressWithFrame', {"frame": frame});
   }
 
   Future<double> getAnimationDuration() async {
@@ -87,8 +94,9 @@ class LottieController {
     return _channel.invokeMethod('getAutoReverseAnimation');
   }
 
-  Future<void> setValue({ LOTValue value, @required String keyPath }) async {
-    assert(value != null); assert(keyPath != null);
+  Future<void> setValue({LOTValue value, @required String keyPath}) async {
+    assert(value != null);
+    assert(keyPath != null);
     return _channel.invokeMethod('setValue', {
       "value": value.value,
       "type": value.type,
@@ -97,11 +105,8 @@ class LottieController {
   }
 
   Stream<bool> get onPlayFinished {
-    var animationFinished = _playFinished
-        .receiveBroadcastStream()
-        .map<bool>(
-            (element) => element);
+    var animationFinished =
+        _playFinished.receiveBroadcastStream().map<bool>((element) => element);
     return animationFinished;
   }
-
 }
