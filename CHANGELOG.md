@@ -9,3 +9,7 @@
 ## 0.2.2
 
 * Bug fixes
+
+## 0.2.3
+
+* Migration from v2 -> v3 lottie-ios
