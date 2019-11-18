@@ -1,4 +1,4 @@
-package com.example.flutter_lottie;
+package com.example.mark922_flutter_lottie;
 
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 import io.flutter.plugin.platform.PlatformView;

@@ -1,4 +1,4 @@
-package com.example.flutter_lottie;
+package com.example.mark922_flutter_lottie;
 
 import android.animation.Animator;
 import android.content.Context;
