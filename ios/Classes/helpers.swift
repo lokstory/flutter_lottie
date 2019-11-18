@@ -14,7 +14,7 @@ public class TestStreamHandler : FlutterStreamHandler {
    }
 }
 
-class ColorDelegate : NSObject, LOTColorValueDelegate {
+class ColorDelegate : NSObject { //, LOTColorValueDelegate
    var color : CGColor
    
    init(color : CGColor) {
@@ -26,7 +26,7 @@ class ColorDelegate : NSObject, LOTColorValueDelegate {
    }
 }
 
-class NumberDelegate : NSObject, LOTNumberValueDelegate {
+class NumberDelegate : NSObject { //, LOTNumberValueDelegate
    var n : CGFloat
    
    init(number : CGFloat) {

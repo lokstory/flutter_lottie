@@ -1,6 +1,6 @@
 name: mark922_flutter_lottie
 description: Use lottie in flutter to render animations for iOS and Android
-version: 0.2.3
+version: 0.2.4
 homepage: https://github.com/mark922/flutter_lottie
 
 environment:
@@ -16,5 +16,5 @@ dev_dependencies:
 
 flutter:
   plugin:
-    androidPackage: com.example.flutter_lottie
+    androidPackage: com.example.mark922_flutter_lottie
     pluginClass: FlutterLottiePlugin

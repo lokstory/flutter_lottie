@@ -39,7 +39,9 @@ public class LottieView : NSObject, FlutterPlatformView {
          let filePath = argsDict["filePath"] as? String ?? nil;
          
          if url != nil {
-            self.animationView = AnimationView(contentsOf: URL(string: url!)!)
+//            self.animationView = AnimationView(url: URL(string: url!),bundle: "ddd")
+            self.animationView = AnimationView(url: URL(string: url!)!, imageProvider: nil, closure: { (err) in
+            }, animationCache: nil)
          }
          
          if filePath != nil {
@@ -53,14 +55,15 @@ public class LottieView : NSObject, FlutterPlatformView {
          let reverse = argsDict["reverse"] as? Bool ?? false
          let autoPlay = argsDict["autoPlay"] as? Bool ?? false
          
-         
-         self.animationView?.loopMode = loop
-         self.animationView?.loopMode = reverse
-         self.animationView?.completionBlock = completionBlock;
+        if(loop){
+            self.animationView?.loopMode = LottieLoopMode.loop
+        }
+        if(reverse){
+            self.animationView?.loopMode = LottieLoopMode.autoReverse
+        }
          if(autoPlay) {
             self.animationView?.play(completion: completionBlock);
          }
-         
       }
       
    }
@@ -95,9 +98,11 @@ public class LottieView : NSObject, FlutterPlatformView {
       if(call.method == "playWithProgress") {
          let toProgress = props["toProgress"] as! CGFloat;
          if let fromProgress = props["fromProgress"] as? CGFloat {
-            self.animationView?.play(fromProgress: fromProgress, toProgress: toProgress, withCompletion: completionBlock)
+            self.animationView?.play(fromProgress: fromProgress, toProgress: toProgress
+                , completion: completionBlock)
          } else {
-            self.animationView?.play(toProgress: toProgress, withCompletion: completionBlock);
+            self.animationView?.play(toProgress: toProgress
+            , completion: completionBlock)
          }
       }
       
@@ -105,9 +110,9 @@ public class LottieView : NSObject, FlutterPlatformView {
       if(call.method == "playWithFrames") {
          let toFrame = props["toFrame"] as! NSNumber;
          if let fromFrame = props["fromFrame"] as? NSNumber {
-            self.animationView?.play(fromFrame: fromFrame, toFrame: toFrame, withCompletion: completionBlock);
+            self.animationView?.play(fromFrame: fromFrame as? AnimationFrameTime, toFrame: AnimationFrameTime(truncating: toFrame), completion: completionBlock);
          } else {
-            self.animationView?.play(toFrame: toFrame, withCompletion: completionBlock);
+            self.animationView?.play(toFrame: AnimationFrameTime(truncating: toFrame), completion: completionBlock);
          }
       }
       
@@ -124,11 +129,11 @@ public class LottieView : NSObject, FlutterPlatformView {
       }
       
       if(call.method == "setLoopAnimation") {
-         self.animationView?.loopMode = props["loop"] as! Bool
+         self.animationView?.loopMode = props["loop"] as! LottieLoopMode
       }
       
       if(call.method == "setAutoReverseAnimation") {
-         self.animationView?.loopMode = props["reverse"] as! Bool
+         self.animationView?.loopMode = props["reverse"] as! LottieLoopMode
       }
       
       if(call.method == "setAnimationProgress") {
@@ -137,7 +142,8 @@ public class LottieView : NSObject, FlutterPlatformView {
       
       if(call.method == "setProgressWithFrame") {
          let frame = props["frame"] as! NSNumber
-         self.animationView?.setProgressWithFrame(frame)
+        self.animationView?.currentProgress = AnimationProgressTime(truncating: frame)
+//         self.animationView?.setProgressWithFrame(frame)
       }
       
       if(call.method == "isAnimationPlaying") {
@@ -146,8 +152,9 @@ public class LottieView : NSObject, FlutterPlatformView {
       }
       
       if(call.method == "getAnimationDuration") {
-         let animationDuration = self.animationView?.animationDuration
-         result(animationDuration)
+//         let animationDuration = self.animationView?.animationDuration
+//        let animationDuration = self.animationView?.frame
+//         result(1000)
       }
       
       if(call.method == "getAnimationProgress") {
@@ -186,14 +193,14 @@ public class LottieView : NSObject, FlutterPlatformView {
       case "LOTColorValue":
          let i = UInt32(value.dropFirst(2), radix: 16)
          let color = hexToColor(hex8: i!);
-         self.delegates.append(ColorDelegate(color: color))
-         self.animationView?.setValueProvider(self.delegates[self.delegates.count - 1], for: AnimationKeypath(string: keyPath + ".Color"))
+         self.delegates.append(ColorDelegate(color: color) as! AnyValueProvider)
+         self.animationView?.setValueProvider(self.delegates[self.delegates.count - 1], keypath: AnimationKeypath(keypath: keyPath + ".Color"))
          break;
       case "LOTOpacityValue":
          if let n = NumberFormatter().number(from: value) {
             let f = CGFloat(truncating: n)
-            self.delegates.append(NumberDelegate(number: f))
-            self.animationView?.setValueProvider(self.delegates[self.delegates.count - 1], for: AnimationKeypath(string: keyPath + ".Opacity"))
+            self.delegates.append(NumberDelegate(number: f) as! AnyValueProvider)
+            self.animationView?.setValueProvider(self.delegates[self.delegates.count - 1], keypath: AnimationKeypath(keypath: keyPath + ".Opacity"))
          }
          break;
       default:
