@@ -12,13 +12,16 @@
       <change beforePath="$PROJECT_DIR$/flutter_lottie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_lottie.iml" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/libs/lottie-2.7.0.aar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/java/com/example/lokstory_flutter_lottie/LottieView.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/example/lokstory_flutter_lottie/LottieView.java" afterDir="false" />
 >>>>>>> 3feebbc4bbceadd9da81e9e8f4fc490c2050ebb5
+=======
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
       <change beforePath="$PROJECT_DIR$/ios/Classes/LottieView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/LottieView.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/lottie_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/lottie_controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -40,6 +43,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ios/Classes/helpers.swift">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,10 +56,18 @@
             <state relative-caret-position="252">
               <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
 >>>>>>> 3feebbc4bbceadd9da81e9e8f4fc490c2050ebb5
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
@@ -63,10 +75,13 @@
             <state relative-caret-position="108">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
 =======
+=======
+      <file pinned="false" current-in-tab="true">
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
         <entry file="file://$PROJECT_DIR$/lib/src/lottie_controller.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="278">
+              <caret line="113" column="32" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="32" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -76,6 +91,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor" />
@@ -105,11 +121,18 @@
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterLottiePlugin.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="30" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="30" />
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/android/src/main/java/com/example/lokstory_flutter_lottie/LottieView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1092">
@@ -120,11 +143,16 @@
 >>>>>>> 3feebbc4bbceadd9da81e9e8f4fc490c2050ebb5
             </state>
           </provider>
+=======
+        <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterLottiePlugin.m">
+          <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/build.gradle">
+        <entry file="file://$PROJECT_DIR$/ios/Classes/helpers.swift">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="27">
               <caret line="4" selection-end-line="4" />
@@ -135,13 +163,23 @@
             <state relative-caret-position="378">
               <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
 >>>>>>> 3feebbc4bbceadd9da81e9e8f4fc490c2050ebb5
+=======
+            <state relative-caret-position="336">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/src/lotvalues/lot_value.dart">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ios/Classes/LottieView.swift">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="251">
               <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
@@ -152,6 +190,10 @@
             <state relative-caret-position="430">
               <caret line="225" column="28" selection-start-line="225" selection-start-column="28" selection-end-line="225" selection-end-column="28" />
 >>>>>>> 3feebbc4bbceadd9da81e9e8f4fc490c2050ebb5
+=======
+            <state relative-caret-position="-495">
+              <caret line="49" column="74" lean-forward="true" selection-start-line="49" selection-start-column="74" selection-end-line="49" selection-end-column="74" />
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
             </state>
           </provider>
         </entry>
@@ -164,16 +206,22 @@
               <caret line="427" column="74" selection-start-line="427" selection-start-column="74" selection-end-line="427" selection-end-column="74" />
 =======
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/src/main/java/com/example/lokstory_flutter_lottie/FlutterLottiePlugin.java">
+        <entry file="file://$PROJECT_DIR$/ios/Classes/LottieViewFactory.swift">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="105">
               <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
 >>>>>>> 3feebbc4bbceadd9da81e9e8f4fc490c2050ebb5
+=======
+            <state relative-caret-position="189">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/pubspec.lock">
           <provider selected="true" editor-type-id="text-editor" />
@@ -186,25 +234,30 @@
               <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
 =======
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+=======
+        <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterLottiePlugin.swift">
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2604">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="147">
+              <caret line="7" column="59" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/src/main/java/com/example/lokstory_flutter_lottie/LottieViewFactory.java">
+        <entry file="file://$PROJECT_DIR$/ios/lokstory_flutter_lottie.podspec">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="168">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
 >>>>>>> 3feebbc4bbceadd9da81e9e8f4fc490c2050ebb5
+=======
+            <state relative-caret-position="315">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
             </state>
           </provider>
         </entry>
@@ -225,10 +278,11 @@
       <find>LottieView</find>
       <find>lokstory_flutter_lottie</find>
       <find>setAnimation</find>
-      <find>setAnimationByPath</find>
       <find>registrarInstance</find>
       <find>composi</find>
       <find>?? nil</find>
+      <find>setAnimationByPath</find>
+      <find>autost</find>
     </findStrings>
     <replaceStrings>
       <replace>lokstory</replace>
@@ -281,6 +335,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+<<<<<<< HEAD
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -337,6 +392,8 @@
           <select />
         </subPane>
       </pane>
+=======
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -470,9 +527,51 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <pane id="AndroidView" />
 >>>>>>> 3feebbc4bbceadd9da81e9e8f4fc490c2050ebb5
+=======
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="flutter_lottie" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Repo\flutter_lottie" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="flutter_lottie" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Repo\flutter_lottie" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="ios" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="flutter_lottie" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Repo\flutter_lottie" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="ios" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="flutter_lottie" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Repo\flutter_lottie" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="ios" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Classes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="flutter_lottie" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Repo\flutter_lottie" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="lib" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="flutter_lottie" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Repo\flutter_lottie" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="lib" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -598,10 +697,14 @@
     <frame x="0" y="23" width="1920" height="968" extended-state="0" />
     <layout>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2645474" />
 =======
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23016354" />
 >>>>>>> 3feebbc4bbceadd9da81e9e8f4fc490c2050ebb5
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23016354" />
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -622,9 +725,15 @@
       <window_info anchor="bottom" id="Logcat" order="9" />
       <window_info anchor="bottom" id="Multi-OS Engine" order="10" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3298969" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32855436" />
       <window_info active="true" anchor="bottom" id="Terminal" order="13" visible="true" weight="0.32616487" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+=======
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49969715" visible="true" weight="0.3273196" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3273196" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50030285" side_tool="true" visible="true" weight="0.3273196" />
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -669,9 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterLottiePlugin.m">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -698,6 +804,7 @@
     <entry file="file://$PROJECT_DIR$/example/ios/Runner/Info.plist">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/ios/Classes/helpers.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -712,6 +819,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -733,16 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterLottiePlugin.swift">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Classes/LottieViewFactory.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -770,19 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/lottie_controller.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/lotvalues/lot_value.dart">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/lotvalues/lot_opacity_value.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -792,6 +878,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/android/src/main/java/com/example/lokstory_flutter_lottie/LottieView.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -807,6 +894,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
     <entry file="file://$PROJECT_DIR$/android/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -851,22 +940,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Classes/LottieView.swift">
+    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/example/lokstory_flutter_lottie/LottieView.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="97" column="23" lean-forward="true" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterLottiePlugin.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterLottiePlugin.m">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Classes/helpers.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Classes/LottieViewFactory.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterLottiePlugin.swift">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="112">
           <caret line="427" column="74" selection-start-line="427" selection-start-column="74" selection-end-line="427" selection-end-column="74" />
 =======
         <state relative-caret-position="430">
           <caret line="225" column="28" selection-start-line="225" selection-start-column="28" selection-end-line="225" selection-end-column="28" />
+=======
+        <state relative-caret-position="147">
+          <caret line="7" column="59" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="59" />
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ios/lokstory_flutter_lottie.podspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/lotvalues/lot_value.dart">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="252">
           <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
 >>>>>>> 3feebbc4bbceadd9da81e9e8f4fc490c2050ebb5
+=======
+        <state relative-caret-position="126">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Classes/LottieView.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="49" column="74" lean-forward="true" selection-start-line="49" selection-start-column="74" selection-end-line="49" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/lottie_controller.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="113" column="32" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+>>>>>>> 53b4714b88b9cfd58feb5e63880223832091959c
         </state>
       </provider>
     </entry>
