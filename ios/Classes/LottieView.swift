@@ -187,8 +187,9 @@ public class LottieView: NSObject, FlutterPlatformView {
         }
 
         if (call.method == "setAnimationByPath") {
-            let filePath = props["path"] as! String;
-            setAnimationByPath(filePath: filePath, result: result)
+            if let filePath = props["path"] as? String {
+                setAnimationByPath(filePath: filePath, result: result)
+            }
         }
     }
 
@@ -220,16 +221,12 @@ public class LottieView: NSObject, FlutterPlatformView {
     func setAnimationByPath(filePath: String, result: FlutterResult) -> Void {
         self.stop()
 
-        let show = filePath != nil && !filePath.isEmpty
-
-        if show {
+        if !filePath.isEmpty {
             let key = self.registrarInstance.lookupKey(forAsset: filePath)
             let path = Bundle.main.path(forResource: key, ofType: nil)
             self.animationView?.animation = Animation.filepath(path!)
             self.animationView?.play(completion: completionBlock);
         }
-
-        self.animationView?.isHidden = !show
 
         result(nil)
     }

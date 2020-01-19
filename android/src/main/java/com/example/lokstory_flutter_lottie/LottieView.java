@@ -13,6 +13,7 @@ import com.airbnb.lottie.value.LottieValueCallback;
 
 import java.util.Map;
 
+import io.flutter.Log;
 import io.flutter.plugin.common.EventChannel;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
@@ -229,27 +230,13 @@ public class LottieView implements PlatformView, MethodChannel.MethodCallHandler
                 setValue(type, value, keyPath);
                 break;
             case "setAnimationByPath":
-                setAnimationByPath(String.valueOf(call.argument("path")), result);
-                break;
-            case "setJon":
-                setAnimationByJson(String.valueOf(call.argument("path")),
-                                   String.valueOf(call.argument("key")),
-                                   result
-                );
+                String path = call.hasArgument("path") ? String.valueOf(call.argument("path")) : null;
+                setAnimationByPath(path, result);
                 break;
             default:
                 result.notImplemented();
                 break;
         }
-    }
-
-    private void play() {
-        animationView.playAnimation();
-    }
-
-    private void stop() {
-        animationView.cancelAnimation();
-        animationView.setProgress(0.0f);
     }
 
     private void setValue(String type, String value, String keyPath) {
@@ -286,33 +273,45 @@ public class LottieView implements PlatformView, MethodChannel.MethodCallHandler
     }
 
     private void setVisible(boolean show) {
+        if (animationView == null) return;
+
         animationView.setVisibility(show ? View.VISIBLE : View.INVISIBLE);
     }
 
-    private void setAnimationByPath(String path, MethodChannel.Result result) {
-        stop();
+    private void play() {
+        if (animationView == null) return;
 
-        boolean show = path != null && path.length() > 0;
-
-        if (show) {
-            String key = mRegistrar.lookupKeyForAsset(path);
-            animationView.setAnimation(key);
-            play();
-        }
-
-        setVisible(show);
-
-        result.success(path);
+        animationView.setMinAndMaxFrame(0, (int)animationView.getMaxFrame());
+        animationView.setMinAndMaxProgress(0, 1);
+        animationView.playAnimation();
     }
 
-    private void setAnimationByJson(String json, String key, MethodChannel.Result result) {
-        stop();
+    private void stop() {
+        if (animationView == null) return;
 
-        if (json != null) {
-            animationView.setAnimationFromJson(json, key);
-            play();
-        }
+        animationView.cancelAnimation();
+        animationView.setProgress(0.0f);
 
-        result.success(null);
+        final int mode = animationView.getRepeatMode();
+        animationView.setRepeatMode(LottieDrawable.RESTART);
+        animationView.setRepeatMode(mode);
+    }
+
+    private void setAnimationByPath(String path, MethodChannel.Result result) {
+       try {
+           stop();
+
+           boolean show = path != null && path.length() > 0;
+
+           if (show) {
+               String key = mRegistrar.lookupKeyForAsset(path);
+               animationView.setAnimation(key);
+               play();
+           }
+
+           result.success(show);
+       } catch (Exception e) {
+           result.success(e.toString());
+       }
     }
 }

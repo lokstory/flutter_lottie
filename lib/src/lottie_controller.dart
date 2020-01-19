@@ -114,9 +114,4 @@ class LottieController {
     return _channel.invokeMethod(
         'setAnimationByPath', {"path": path});
   }
-
-  Future<void> setAnimationByJson({String path, String key}) async {
-    return _channel.invokeMethod(
-        'setAnimationByPath', {"path": path, "key": key});
-  }
 }
