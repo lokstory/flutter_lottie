@@ -1,4 +1,4 @@
-package example.android.app.src.main.java.com.example.flutter_lottie_example;
+package example.android.app.src.main.java.com.example.lokstory_flutter_lottie;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

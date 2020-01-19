@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:mark922_flutter_lottie/mark922_flutter_lottie.dart';
+import 'package:lokstory_flutter_lottie/lokstory_flutter_lottie.dart';
 import 'page_dragger.dart';
 
 void main() => runApp(MyApp());

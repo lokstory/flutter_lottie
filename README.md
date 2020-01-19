@@ -1,4 +1,4 @@
-# flutter_lottie
+# lokstory_flutter_lottie
 
 Use Lottie in Flutter.
 

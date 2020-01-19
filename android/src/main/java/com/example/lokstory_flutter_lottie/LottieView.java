@@ -1,4 +1,4 @@
-package com.example.mark922_flutter_lottie;
+package com.example.lokstory_flutter_lottie;
 
 import android.animation.Animator;
 import android.content.Context;
@@ -89,7 +89,6 @@ public class LottieView implements PlatformView, MethodChannel.MethodCallHandler
         if(autoPlay) {
             animationView.playAnimation();
         }
-
 
         animationView.addAnimatorListener(new Animator.AnimatorListener() {
             @Override
@@ -219,10 +218,54 @@ public class LottieView implements PlatformView, MethodChannel.MethodCallHandler
                 final String type = args.get("type").toString();
                 setValue(type, value, keyPath);
                 break;
+            case "setAnimationByPath":
+                setAnimationByPath(String.valueOf(call.argument("path")), result);
+                break;
+            case "setJon":
+                setAnimationByJson(String.valueOf(call.argument("path")), String.valueOf(call.argument("key")), result);
+                break;
             default:
                 result.notImplemented();
                 break;
         }
+    }
+
+    private void play() {
+//        animationView.setMinAndMaxFrame(0, (int) maxFrame);
+//        animationView.setMinAndMaxProgress(0, 1);
+        animationView.playAnimation();
+    }
+
+    private void stop() {
+        animationView.cancelAnimation();
+        animationView.setProgress(0.0f);
+//        final int mode = animationView.getRepeatMode();
+//        animationView.setRepeatMode(LottieDrawable.RESTART);
+//        animationView.setRepeatMode(mode);
+    }
+
+    private void setAnimationByPath(String path, MethodChannel.Result result) {
+        stop();
+
+        if (path != null) {
+            String key = mRegistrar.lookupKeyForAsset(path);
+            animationView.setAnimation(key);
+
+            play();
+        }
+
+        result.success(path);
+    }
+
+    private void setAnimationByJson(String json, String key, MethodChannel.Result result) {
+        stop();
+
+        if (json != null) {
+            animationView.setAnimationFromJson(json, key);
+            play();
+        }
+
+        result.success(null);
     }
 
     private void setValue(String type, String value, String keyPath) {
