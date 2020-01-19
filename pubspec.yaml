@@ -1,6 +1,6 @@
 name: lokstory_flutter_lottie
 description: Use lottie in flutter to render animations for iOS and Android
-version: 0.0.4+8
+version: 0.0.4+10
 homepage: https://github.com/lokstory/flutter_lottie
 
 environment:
