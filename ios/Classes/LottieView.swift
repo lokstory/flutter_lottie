@@ -185,7 +185,11 @@ public class LottieView : NSObject, FlutterPlatformView {
             setValue(type: type, value: value, keyPath: keyPath)
          }
       }
-      
+
+      if(call.method == "setAnimationByPath") {
+           let filePath = props["path"] as! String;
+            setValue(filePath: filePath, result: result)
+        }
    }
    
    func setValue(type: String, value: String, keyPath: String) -> Void {
@@ -207,5 +211,11 @@ public class LottieView : NSObject, FlutterPlatformView {
          break;
       }
    }
+
+   func setAnimationByPath(filePath: String, result: FlutterResult) -> Void {
+         let key = self.registrarInstance.lookupKey(forAsset: filePath!)
+                     let path = Bundle.main.path(forResource: key, ofType: nil)
+                     self.animationView = AnimationView(filePath: path!)
+      }
    
 }

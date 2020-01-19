@@ -244,30 +244,6 @@ public class LottieView implements PlatformView, MethodChannel.MethodCallHandler
 //        animationView.setRepeatMode(mode);
     }
 
-    private void setAnimationByPath(String path, MethodChannel.Result result) {
-        stop();
-
-        if (path != null) {
-            String key = mRegistrar.lookupKeyForAsset(path);
-            animationView.setAnimation(key);
-
-            play();
-        }
-
-        result.success(path);
-    }
-
-    private void setAnimationByJson(String json, String key, MethodChannel.Result result) {
-        stop();
-
-        if (json != null) {
-            animationView.setAnimationFromJson(json, key);
-            play();
-        }
-
-        result.success(null);
-    }
-
     private void setValue(String type, String value, String keyPath) {
         String[] keyPaths = keyPath.split("\\.");
         switch (type) {
@@ -301,5 +277,29 @@ public class LottieView implements PlatformView, MethodChannel.MethodCallHandler
         float green = Integer.valueOf(value.substring(6,8), 16);
         float blue = Integer.valueOf(value.substring(8,10), 16);
         return Color.argb(255, (int) red, (int) green, (int) blue);
+    }
+
+    private void setAnimationByPath(String path, MethodChannel.Result result) {
+        stop();
+
+        if (path != null) {
+            String key = mRegistrar.lookupKeyForAsset(path);
+            animationView.setAnimation(key);
+
+            play();
+        }
+
+        result.success(path);
+    }
+
+    private void setAnimationByJson(String json, String key, MethodChannel.Result result) {
+        stop();
+
+        if (json != null) {
+            animationView.setAnimationFromJson(json, key);
+            play();
+        }
+
+        result.success(null);
     }
 }
